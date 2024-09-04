@@ -1,0 +1,143 @@
+.adminCredentials{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32, 32, 32, 0.348);
+    background-image: url('../../Asset/admin-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+    .Admin {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .container {
+      display: flex;
+      flex: 1;
+    }
+    
+    .sidebar {
+      background-color: #222;
+      color: white;
+      width: 200px;
+      padding: 1rem;
+    }
+    
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sidebar nav ul li {
+      margin: 1rem 0;
+    }
+    
+    .sidebar-ul li{
+      cursor: pointer;
+      width: fit-content;
+      padding: 0 5px;
+   }
+  
+  
+  
+  
+  
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    
+      .sidebar {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .stats {
+        flex-direction: column;
+      }
+    
+      .stat-item {
+        margin: 0.5rem 0;
+      }
+    }
+    
+  
+  
+  
+  
+    .auth-container {
+      width: 50vw;
+      height: 400px;
+      perspective: 1000px;
+      margin: 50px auto;
+  
+    }
+  
+  
+  
+    @media (max-width: 768px) {
+      .auth-container {
+        width: 90vw;
+    
+      }
+    }
+  
+  
+   
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+  
+    }
+    
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+    
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 30px;
+  
+    }
+    
+    .card-front {
+      background-color: #fafafa77;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .card-back {
+      /* background-color: #fafafa; */
+      background-color: #fafafa77;
+  
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
