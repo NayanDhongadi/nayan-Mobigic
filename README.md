@@ -11,4 +11,4 @@ STEP 5 (optional): Write command "npm i nodemon -g" for installing the nodemon g
 STEP 6 : Open server Folder and write command "npm start"
 
 
-To access the
+To access the the database use "mongodb+srv://nayandhongadi26:nayandhongadi@cluster0.z8xv8.mongodb.net/assignment"  connection string in mongo DB compass
